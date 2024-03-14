@@ -1,0 +1,120 @@
+<!--
+    Instrucciones:
+
+A continuación, se describen los estilos que debes aplicar:
+
+Estilos generales:
+
+Utiliza la fuente «Arial» para todo el documento.
+Centra el texto horizontalmente en todos los elementos.
+Estilos de la tabla:
+
+Establece un ancho del 80% para la tabla, de manera que ocupe el 80% del ancho disponible en la ventana.
+Centra la tabla horizontalmente con un margen superior de 20 píxeles.
+Coloca el título en la parte inferior de la tabla.
+Estilos del título de la tabla:
+
+Utiliza un tamaño de fuente de 20 píxeles.
+Añade un espacio de 10 píxeles alrededor del título.
+Estilos de las celdas de encabezado (th) y de datos (td):
+
+Añade un espacio de 10 píxeles alrededor de todas las celdas.
+Establece un fondo azul (#009688) para las celdas de encabezado con texto blanco (#fff).
+Agrega un borde sólido de 1 píxel con color gris claro (#ddd) a todas las celdas.
+Estilos para filas impares del cuerpo de la tabla:
+
+Aplica un fondo gris claro (#f2f2f2) a las filas impares del cuerpo de la tabla.
+Estilo al pasar el cursor sobre una fila del cuerpo de la tabla:
+
+Cambia el fondo de la fila a un tono de verde claro (#c7e2e0) al pasar el cursor sobre ella.
+Estilo para la tercera columna (Precio) de las filas del cuerpo de la tabla:
+
+Agrega el símbolo del euro (€) después de los valores en la tercera columna (Precio) de las filas del cuerpo de la tabla.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{font-family: Arial;
+        text-align: center;}
+
+      .styled-table{
+        width: 80%;
+        margin: 20px auto;
+        caption-side: bottom;
+      }
+
+      .styled-table caption {font-size: 20px;
+      padding: 10px;}
+
+      .styled-table th, .styled-table td {padding: 10px;
+        border: solid 1px #ddd;
+      }
+
+      .styled-table th {
+        background-color: #009688;
+        color: #ffff;
+      }
+
+      .styled-table tbody tr:nth-child(odd){
+        background-color: #f2f2f2;
+      }
+
+      .styled-table tbody tr:hover{
+        background-color: #c7e2e0;
+      }
+
+      .styled-table tbody tr td:nth-child(3)::after{
+        content: "€";
+      }
+
+    </style>
+</head>
+<body>
+    <h1>Tabla de Ejemplo</h1>
+<table class="styled-table">
+  <caption><b>Tabla 1.</b> Lista de Productos</caption>
+  <thead>
+    <tr>
+      <th>Nº</th>
+      <th>Producto</th>
+      <th>Precio</th>
+      <th>Stock</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>Producto A</td>
+      <td>25</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Producto B</td>
+      <td>15</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Producto C</td>
+      <td>40</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Producto D</td>
+      <td>32</td>
+      <td>10</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
+
+<!--
+  paading para elementos externos 
+-->

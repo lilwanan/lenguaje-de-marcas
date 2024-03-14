@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+    </head>
+    <body>
+        
+        <form action="https://localhost/proceso.php" method="get">
+            Nombre1 <input type="text" name="nombre1" tabindex="3" placeholder="Escribe aqui">
+            <br><br>
+            Solo números <input type="number" name="numeros" step="10" step="any" min="20" max="100">
+            <br>
+            <br>
+            <input type="file" name="fichero"> Elija el fichero
+            <br>
+            Fecha <input type="date" name="fecha">
+            <br><br>
+            Hora <input type="time" name="hora">
+            <br><br>
+            Fecha_Hora <input type="datetime-local">
+            <br><br>
+            Color <input type="color" name="color" value="#ffff00">
+            <br><br>
+            Nombre2 <input type="text" name="nombre2" value="dia" autofocus tabindex="1" readonly >
+            Contraseña <input type="password" name="contraseña">
+            <br>
+            Nombre3 <input type="text" name="nombre3" required
+            size="50" maxlength="30" minlength="5"
+             disabled value="noche">
+            <br>
+            <textarea rows="10" cols="10" ></textarea>
+            
+            
+            <p>
+                <input type="radio" name="sexo" value="h"> Hombre 
+                <input type="radio" name="sexo" value="m"> Mujer 
+            </p>
+                <input type="submit" tabindex="2" name="Enviar">
+                <input type="reset" value="Limpiar">
+                <br>
+                <input type="button" value="Cargar una funcionalidad">
+
+        </form>
+
+    </body>
+
+
+</html>
+
+
+<!--
+    <form> etiqueta para formularios en html
+    "action" direccion o servidor para enviar datos
+    <form action= "10.191.168.1/proceso.php">
+    para practicas solo usamos <form action = "proceso.php">
+    atributo method="get/post"
+    get se puede ver en la barra de arriba donde se envia seguida del nombre del dato
+    con post no se ven esos datos
+    input elementos donde el usuario puede escribir, con type puedes poner la que quieres escribir, submit para enviar
+    atributo required, es obligatorio
+    value  para meter una info
+    size tamaño para la caja de texto
+    maxlength, minlength caracteres minimos y maximos que podemos escribir
+    disabled para que solo sea de modo lectura un campo
+    autofocus puedes empezar a escrubur ahi del tirón
+    readonly solo para lectura
+    si esta disabled no se puede pasar por el tabulador
+    reset , resetea el formulario
+    button meter una funcionalidad
+    password cifravisualmente
+    placeholder para poner un mensaje que se borra al escribir
+    step "any" te admite decimales
+    step"10" multiplos de 10
+    #ffff00 para poner un color por defecto
+-->

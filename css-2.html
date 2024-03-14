@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        div h2 {color: red;}
+        div h2:first-child{color: greenyellow;}
+        div h2:last-child{color: blue;}
+        div h2:nth-child(4){color: orange;}
+        a:hover{background-color: red;
+        font-size: 40px;
+        transition: 1s;}
+        div:hover a{background-color: green;
+        font-size: 40px;
+        transition: 1s;}
+        a:active{background-color: yellow;}
+        
+        a:link{font-size: 30px;
+        background-color: brown;} 
+        a:visited{font-size: 10px;
+        background-color: blueviolet;}
+        */
+            h2::before{content: "*";
+        color: red;}
+        h2::after{content: "*";
+    color: red;}
+    p::first-line {color: red;}
+    p::first-letter{color: green;
+    font-size: 40px;}
+    div h2:first-child::first-letter{background-color: chocolate;}
+    </style>
+</head>
+<body>
+    <h1>Asignaturas de DAM</h1>
+    <a href="https://www.medac.es"> estoy Aqui</a>
+    <div>
+    <a href="https://www.medac.es">FOL</a>
+    <p>Sdjashkfkhadsfkhakhfkhakfkhfkahkkhafkaffhakfakfhakhfkahafhfhfhdfkjfdaljafjlafjldjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+    jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+    jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj:</p>    
+    <h2>Sistemas Informaticos</h2>
+    <h2>Lenguaje de marcas</h2>
+    <h2>Base de datos</h2>
+    <h2>Programacion</h2>
+    <h2>Entornos de desarrollo</h2>
+    
+    </div>
+    
+</body>
+</html>
+
+<!--
+    :visited link ya visitado
+    :link link no visitado
+    :active cuando tienes el curso clickando encima
+    :hover cuando esta encima sin clickar
+    ::before para poner algo antes de la etiqueta seleccionad
+    ::after para despues
+-->

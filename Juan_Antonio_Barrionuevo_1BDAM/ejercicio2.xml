@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding ="UTF-8" standalone="yes" ?>
+
+<!DOCTYPE productos[
+    <!ELEMENT productos (productos*)>
+    <!ELEMENT producto (nombre, descripcion,precio,caracteristicas)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT descripcion (#PCDATA)>
+    <!ELEMENT precio (#PCDATA)>
+    <!ELEMENT caracteristicas (caracteristica+)>
+    <!ELEMENT caracteristica (#PCDATA)>
+        <!ATTLIST caracteristica nombre2 CDATA #REQUIRED>   
+    
+
+]> 
+
+<productos>
+    <producto>
+        <nombre>Patatas</nombre>
+        <descripcion>recien sacadas del huerto</descripcion>
+        <precio>1,80</precio>
+        <caracteristicas>
+        <caracteristica nombre2="tuberculo">carga rapida 2000mah</caracteristica>
+        </caracteristicas>
+    </producto>
+    <producto>
+        <nombre>Coca Cola</nombre>
+        <descripcion>bebida refrescante</descripcion>
+        <precio>1,49</precio>
+        <caracteristicas>
+        <caracteristica nombre2="refresco"> </caracteristica>
+        </caracteristicas>
+    </producto>
+</libros>

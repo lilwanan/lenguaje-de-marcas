@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding ="UTF-8" standalone="yes" ?>
+<!DOCTYPE libro [
+    <!ELEMENT libro (paginas)>
+    <!ELEMENT paginas(pagina)+>
+    <!ELEMENT pagina ((nombre,descripcion,url,idioma?)|autor)>
+    <!ELEMENT nombre (#PCDATA)> <!--NO SE PUEDE DESMENUZAR MAS-->
+    <!ELEMENT descripcion (#PCDATA)>
+    <!ELEMENT url (#PCDATA)>
+        <!ATTLIST url lang (ESP|ENG|ITA) "ITA"> 
+    <!ELEMENT idioma EMPTY> <!--PUEDE APARECER O NO-->
+    <!ELEMENT autor (nombre_autor)>
+        <!ATTLIST autor apellido CDATA #REQUIRED>
+    <!ELEMENT nombre_autor (#PCDATA)>
+        
+
+    <!--LAS REGLAS TE INDICAN EL ORDEN QUE TIENE QUE SEGUIR-->
+
+]>
+
+<libro>
+    <paginas>
+        <pagina>
+            <nombre>Aprende XML</nombre>
+            <descripcion> Aprender XML es sencillo</descripcion>
+            <url lang="ESP">www.aprendexml.com</url>
+            <idioma/>
+        </pagina>
+        <pagina>
+            <autor apellido="medinilla">
+                <nombre_autor>wanan</nombre_autor>
+                <!--medinilla -->
+            </autor>
+        </pagina>
+        <pagina>
+            <nombre>Aprende css</nombre>
+            <descripcion> Aprender css es sencillo</descripcion>
+            <url lang="ENG">www.cssfasilito.com</url>
+            <idioma/>
+        </pagina>
+    </paginas>
+</libro>

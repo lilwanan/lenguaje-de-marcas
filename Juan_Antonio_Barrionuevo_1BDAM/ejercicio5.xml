@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE coleccion[
+
+<!ELEMENT coleccion (album+)>
+<!ELEMENT album (fotografia+)>
+<|ELEMENT fotografia (lugar,fecha,tipo,personas,monumento)>
+<!ELEMENT lugar (#PCDATA)>
+<!ELEMENT fecha (#PCDATA)>
+    <!ATTLIST fecha hora CDATA #REQUIRED>
+
+]>
+
+
+<coleccion>
+    <albumes>     <!-- En este ejemplo albumes y coleccion es lo mismo por lo que se crea una irredundancia "Cabra"-->
+        <album>
+            <fotografias>
+                <fotografia>
+                    <lugar>malaga</lugar>
+                    <fecha hora="18:30">2023</fecha>
+                    <personas>4</personas>
+                    <camara>nikon</camara>
+                    <monumento>alcazaba</monumento>
+                </fotografia>
+                <fotografia>
+                    <lugar>granada</lugar>
+                    <fecha hora="19:30">2023</fecha>
+                    <personas>3</personas>
+                    <camara>canon</camara>
+                    <monumento>alhambra</monumento>
+                </fotografia>
+                <fotografia>
+                    <lugar>cordoba</lugar>
+                    <fecha hora="17:30">2023</fecha>
+                    <personas>2</personas>
+                    <camara>canon</camara>
+                    <monumento>mezquita</monumento>
+                </fotografia>
+                <fotografia>
+                    <lugar>cadiz</lugar>
+                    <fecha hora="16:30">2023</fecha>
+                    <personas>3</personas>
+                    <camara>sony</camara>
+                    <monumento>salinas</monumento>
+                </fotografia>
+            </fotografias>
+        </album>
+        <album>
+            <fotografias>
+                <fotografia>
+                    <lugar>barcelona</lugar>
+                    <fecha hora="18:30">2022</fecha>
+                    <personas>5</personas>
+                    <camara>nikon</camara>
+                    <monumento>sagrada familia</monumento>
+                </fotografia>
+                <fotografia>
+                    <lugar>madrid </lugar>
+                    <fecha hora="15:30">2022</fecha>
+                    <personas>7</personas>
+                    <camara>canon</camara>
+                    <monumento>bernabeu</monumento>
+                </fotografia>
+                <fotografia>
+                    <lugar>valencia</lugar>
+                    <fecha hora="12:30">2022</fecha>
+                    <personas>8</personas>
+                    <camara>fuujistu</camara>
+                    <monumento>atomium</monumento>
+                </fotografia>
+                <fotografia>
+                    <lugar>toledo</lugar>
+                    <fecha hora="16:30">2022</fecha>
+                    <personas>2</personas>
+                    <camara>sony</camara>
+                    <monumento>alcazar</monumento>
+                </fotografia>
+            </fotografias>
+        </album>
+    </albumes>
+</coleccion>

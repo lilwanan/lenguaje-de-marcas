@@ -1,0 +1,10 @@
+/**
+ * 
+ */
+/**
+ * @author aeuser
+ *
+ */
+module laberinto {
+	
+}

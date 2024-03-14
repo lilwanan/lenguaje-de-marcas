@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio de selectores</title>
+
+
+    <style>
+      table{
+        border: 1px solid red;
+        padding: 5px;
+      }
+
+      #titulo{
+        color: green;
+      }
+      strong {
+        color: red;
+      }
+
+      .destacado{
+        color: orange;
+      }
+      #subtitulo{
+        color: #00bbff;
+      }
+      #especial{
+        color: purple;
+      }
+
+      a {
+        color: red;
+      }
+      em {
+        color: blue;
+      }
+
+      #adicional{
+        color: olive  ;
+      }
+
+      #especial{
+        color: fuchsia;
+      }
+
+      .especial{
+        color: orange;
+      }
+
+      #adicional a:link{
+        color: green;
+      }
+
+      caption {
+        color: blue;
+      }
+
+      .especial2{
+        color: orange;
+      }
+
+      tr:nth-child(strong){
+        color: orange;
+      }
+
+      td {
+        color: green;
+      }
+      th {
+        color: red;
+      }
+
+    </style>
+
+</head>
+
+<body>
+    <h1 id="titulo">Lorem ipsum dolor sit amet</h1>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sed vero earum cupiditate, <strong>vitae non in natus, dolorum quam voluptate</strong>  harum aliquam dignissimos hic sit cum nobis dicta amet? <span class="destacado">Etiam sagittis tortor</span> sed arcu sagittis tristique.</p>
+    
+    <h2 id="subtitulo">Aliquam tincidunt, sem eget volutpat porta</h2>
+    
+    <p>Vivamus velit dui, placerat vel, feugiat in, ornare et, urna.  <a href="#">Aenean turpis metus, <em>aliquam non</em>, tristique in</a>, pretium varius, sapien. Proin vitae nisi.  Suspendisse <span class="especial">porttitor purus ac elit</span>. Suspendisse eleifend odio at dui. In in elit sed metus pretium elementum.</p>
+    
+    <table summary="Descripción de la tabla y su contenido">
+    <caption>Título</caption>
+    <thead>
+      <tr>
+        <th scope="col"></th>
+        <th scope="col" class="especial2">Título col 1</th>
+        <th scope="col" class="especial2">Título col 2</th>
+      </tr>
+    </thead>
+    
+    <tfoot>
+      <tr>
+        <th scope="col"></th>
+        <th scope="col">Título col 1</th>
+        <th scope="col">Título colu 2</th>
+      </tr>
+    </tfoot>
+    
+    <tbody>
+      <tr>
+        <th scope="row" class="especial2">Título fila 1</th>
+        <td>Donec purus ipsum</td>
+        <td>Curabitur <em>blandit</em></td>
+      </tr>
+      <tr>
+        <th scope="row">Título fila 2</th>
+        <td>Donec <strong>purus ipsum</strong></td>
+        <td>Curabitur blandit</td>
+      </tr>
+    </tbody>
+    </table>
+    
+    <div id="adicional">
+    <p>Donec purus ipsum, posuere id, venenatis at, <span>placerat ac, lorem</span>. Curabitur blandit, eros sed gravida aliquet, risus justo
+    porta lorem, ut mollis lectus tortor in orci. Pellentesque nec augue.</p>
+    
+    <p>Fusce nec felis eu diam pretium adipiscing. <span id="especial">Nunc elit elit, vehicula vulputate</span>, venenatis in,
+    posuere id, lorem. Etiam sagittis, tellus in ultrices accumsan, diam nisi feugiat ante, eu congue magna mi non nisl.</p>
+    
+    <p>Vivamus ultrices aliquet augue. <a href="#">Donec arcu pede, pretium vitae</a>, rutrum aliquet, tincidunt blandit, pede.
+    Aliquam in nisi. Suspendisse volutpat. Nulla facilisi. Ut ullamcorper nisi quis mi.</p>
+    </div>
+    
+    </body>
+    </html>

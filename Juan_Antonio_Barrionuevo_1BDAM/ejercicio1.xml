@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding ="UTF-8" standalone="yes" ?>
+
+<libros>
+    <libro>
+        <titulo>Don Quijote</titulo>
+        <autor>Cervantes</autor>
+        <año>1549</año>
+    </libro>
+    <libro>
+        <titulo>Historia de Una Escalera</titulo>
+        <autor>anonimo</autor>
+        <año>1899</año>
+    </libro>
+    <libro>
+        <titulo>Arbol de la Ciencia</titulo>
+        <autor>anonimo</autor>
+        <año>1930</año>
+    </libro>
+</libros>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding ="UTF-8" standalone="yes" ?>
+<!DOCTYPE ciudades [
+<!ELEMENT >
+]>
+
+<ciudades>
+    <ciudad pais="España">
+        <nombre> malaga </nombre>
+        <poblacion>1400</poblacion>
+    </ciudad>
+</ciudades>
+
+<!--
+    tipos elementos<!ELEMENT (#PCDATA) elementos que son textos planos>
+                    (elemento1,elemento2,(elemento3-1|elemento3-2)) para varios elementos y elementos y subelementos>
+                    EMPTY >
+                    ANY para cuando se combinan varias reglas>
+
+                    cardinalidad: 0..1 -> booleano de si puede aparecer o no '?'
+                                  0..n -> o 0 o muchas veces necesariamente '*'
+                                  1..n -> 1 o muchas veces necesariamente '+'
+
+                                  Atributos: <!ATTLIST autor apellido -> lo que a la derecha es el tipo
+                                             tipos: CDATA valor alfanumerico
+                                                    ID identificado (parecido a una primary key)
+                                                    (A|B|C|..) enumerado
+                                                    -valor atributo: #REQUIRED OBLIGATIORIO
+                                                                     #IMPLIED OPCIONAL
+                                                                     #FIXED "nombre o valor" VALOR FIJO
+                                                                     "valor por defecto"
+
+-->

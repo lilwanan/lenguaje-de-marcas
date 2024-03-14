@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding ="UTF-8" standalone="no" ?>
+
+<!--
+    Escribir un documento XML bien formado que guarde informacion de dos equipos de futbol(nombre ciudad y entrenador) con dos jugadores(nombre,posicion y nacionalidad) cada uno la posicion(portero,defensa,medio,delantero) deberá representarse mediante un atributo del jugador . No obstsante , no debera indicarse el nombre del entrenador
+-->
+
+
+
+    <equipos>
+        <equipo>
+            <nombre>Gerona FC</nombre>
+            <ciudad>Gerona</ciudad>
+            <entrenador/>
+            <jugadores>    
+                <jugador posicion="putero">
+                    <nombre>Gazzaniga</nombre>
+                    <nacionalidad>Argentino</nacionalidad>
+                </jugador>
+                <jugador posicion="delantero">
+                    <nombre>Dovbyk</nombre>
+                    <nacionalidad>Ucrania</nacionalidad>
+                </jugador>
+            </jugadores>
+        </equipo>
+
+        <equipo>
+            <nombre>Real Vardrid</nombre>
+            <ciudad>Madrid</ciudad>
+            <entrenador/>
+            <jugadores>    
+                <jugador posicion="putero">
+                    <nombre>Curtua</nombre>
+                    <nacionalidad>berga</nacionalidad>
+                </jugador>
+                <jugador posicion="delantero">
+                    <nombre>Vinicius Jr</nombre>
+                    <nacionalidad>Zoo</nacionalidad>
+                </jugador>
+            </jugadores>
+        </equipo>
+
+    </equipos>
+
+
+
+    <!--
+        gacela
+    Jirafa leon gorilla
+guepardo cebra bonobo leopardo
+          tigre
+    bisonte     hiena
+    -->

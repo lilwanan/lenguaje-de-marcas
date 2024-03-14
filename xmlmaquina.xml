@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding ="UTF-8" standalone="no" ?>
+
+    <bebidas>
+        <bebida>
+            <codigo>L45</codigo>
+            <nombre>Coca Cola</nombre>
+            <precio>1,20$</precio>
+        </bebida>
+        <bebida>
+            <codigo>L46</codigo>
+            <nombre>Fanta Naranja</nombre>
+            <precio>1$</precio>
+        </bebida>
+    </bebidas>
+
+    
+

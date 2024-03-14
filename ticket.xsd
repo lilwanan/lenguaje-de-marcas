@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="ticket">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="miempresa">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="tipoTexto"/>
+                            <xs:element name="cif" type="tipoCif"/>
+                            <xs:element name="telefono" type="tipoTelefono"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="micliente">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="tipoTexto"/>
+                            <xs:element name="cif" type="tipoCif"/>
+                            <xs:element name="telefono" type="tipoTelefono"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="servicios">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="lineas" minOccurs="1" maxOccurs="15">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="descripcion" type="tipoTexto"/>
+                                        <xs:element name="trabajadores" type="tipoTexto"/>
+                                        <xs:element name="maquinaria" minOccurs="0" maxOccurs="unbounded" type="tipoTexto"/>
+                                        <xs:element name="pvp" type="tipoPrecio"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="codigo-articulo" type="xs:ID" use="required"/>
+                                    <xs:attribute name="tipo" type="tipoArticulo" use="optional"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="importe" type="tipoPrecio" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="numero" type="xs:positiveInteger" use="required"/>
+            <xs:attribute name="fecha" type="xs:date" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name="tipoTexto">
+        <xs:restriction base="xs:string">
+          <xs:minLength value="5"/>
+          <xs:maxLength value="31"/>  
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tipoPrecio">
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="0"/>
+            <xs:maxExclusive value="999"/>
+            <xs:totalDigits value="5"/>
+            <xs:fractionDigits value="2"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tipoCif">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{8}[A-Z]"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tipoTelefono">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{9}"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tipoArticulo">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Concierto"/>
+            <xs:enumeration value="Evento_deportivo"/>
+            <xs:enumeration value="Feria_muestras"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

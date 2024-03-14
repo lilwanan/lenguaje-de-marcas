@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Juan Antonio">
+        <meta name="keywords" content="Formulario Contacto">
+        <meta name="description" content="Esta página contiene el acceso al formulario de contacto con las siguientes preguntas">
+        <title>Formulario de Contacto</title>
+        <link rel="icon" type="image/x-icon" href="./imagenes/3447476.png">
+    </head>
+    <body style="background-color: blanchedalmond;"> 
+        <header>
+        <h1 style="text-align: center;"><a style="color: maroon;"><i>Formulario de Contacto</i></a></h1>
+        <br>
+        </header>
+        <main>
+            <section>
+                <nav style="text-align: center;">
+                <form action="procesamiento_formulario.php" method="post">
+                <article>
+                    <b style="color: maroon;">Nombre:</b> <input type="text" name="nombre" tabindex="1" placeholder="Escribe aquí" required>
+                </article>
+                <br>
+                <article>
+                    <b style="color: maroon;">Apellido:</b> <input type="text" name="apellido" tabindex="2" placeholder="Escribe aquí" required>
+                </article>
+                <br>
+                <article>
+                    <b style="color: maroon;">Número de Telefono:</b> <input type="text" tabindex="3" name="numero"  placeholder="XXXXXXXXX"
+                    pattern="\d{9}" required>
+                </article>
+                <br>
+                <article>
+                    <b style="color: maroon;">E-Mail:</b> <input type="email" name="email" tabindex="4" placeholder="Escribe aqui" required>
+                </article>
+                <br>
+                <article>
+                    <b style="color: maroon;">Provincia:</b> <select name="provincia" size="1" tabindex="5" required>
+                        <option value="1" >Cádiz</option>
+                        <option value="2">Córdoba</option>
+                        <option value="3">Granada</option>
+                        <option value="4">Huelva</option>
+                        <option value="5">Jaén</option>
+                        <option value="6" selected>Málaga</option>
+                        <option value="7">Sevilla</option>
+                    </select>
+                </article>
+                <br>
+                <article>
+                    <p><b style="color: maroon;">Motivo de Contacto:</b></p> <textarea name="motivo_contacto" tabindex="6" cols="30" rows="10" maxlength="300" required></textarea>
+                </article>
+                <p>
+                    <input style="background-color: maroon; color: white;" type="submit" tabindex="" value="Enviar">
+                    <input style="background-color: maroon; color: white;" type="reset" value="Limpiar">
+                    
+                </p>
+                </form>
+                </nav>
+            </section>
+            <section style="text-align: center;">
+                <audio src="./imagenes/SEAGULLS.mp3" style="background-color: maroon;" preload="auto" loop autoplay controls></audio>
+            </section>
+        </main>
+    </body>
+</html>

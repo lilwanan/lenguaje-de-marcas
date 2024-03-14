@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding ="UTF-8" standalone="no" ?>
+
+    <ciudades>
+        <ciudad>
+            <nombre>Malaga</nombre>
+            <pais>España</pais>
+            <continente>Europa</continente>
+            <visitado/>
+        </ciudad>
+        <ciudad>
+            <nombre>Sidney</nombre>
+            <pais>Australia</pais>
+            <continente>Oceania</continente>
+        </ciudad>
+        <ciudad>
+            <nombre>Orlando</nombre>
+            <pais>EEUU</pais>
+            <continente>Almeria</continente>
+            <visitado/> 
+        </ciudad>
+    </ciudades>
