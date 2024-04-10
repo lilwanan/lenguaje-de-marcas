@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Equipo>
+        <Miembro nivel="basica">
+                <Nombre>Sara </Nombre>
+                <Telefono tipo="casa">5555-1234</Telefono>
+                <Telefono tipo="trabajo">5555-4321</Telefono>
+                <Equipamento>PS5</Equipamento>
+        </Miembro>
+
+        <Miembro nivel="premier">
+                <Nombre>David</Nombre>
+                <Telefono tipo="casa">3838-1234</Telefono>
+                <Telefono tipo="trabajo">3838-4321</Telefono>
+                <Equipamento>PS5</Equipamento>
+        </Miembro>
+
+        <Miembro nivel="basica">
+                <Nombre>Rogelio</Nombre>
+                <Telefono tipo="casa">8888-1234</Telefono>
+                <Telefono tipo="trabajo">8888-4321</Telefono>
+                <Equipamento>Nintendo Switch</Equipamento>
+        </Miembro>
+</Equipo>
